@@ -1,25 +1,20 @@
 #include <stdio.h>
-#include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n == 0);
+	for (i = 0; i < 26; i++)
 	{
-		printf("%d is zero\n", n);
+		putchar(alp[i]);
 	}
-	else if (n > 0);
-	{
-		printf("%d is positive\n", n);
-	}
-	else (n < 0);
-	{
-		printf("%d is negative\n", n);
-	}
+	putchar('\n');
 	return (0);
 }
+
