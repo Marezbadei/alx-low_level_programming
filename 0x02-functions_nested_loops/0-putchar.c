@@ -1,14 +1,14 @@
-#include "main.h"
 /**
- * _isupper - check if a letter is upper
- * @x: The number to be checked
- * Return 1 for upper letter or 0 for any else
+ * main - Entry point
+ * Description: point _putchar using putchar prototype
+ * Return: ALways 0 (Success)
  */
-int _isupper(int x)
+int main(void)
 {
-	if (x >= 65 && x <= 90)
-	{
-		return (1);
-	}
+	char str[] = "_putchar";
+	int ch;
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
 	return (0);
 }
